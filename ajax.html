@@ -127,6 +127,8 @@
 		$.getJSON("scripts/students.json", function(data){
 			// $("#contentBox").html(data.Students[0].First);
 
+			document.getElementById("contentBox1").innerHTML = "";
+
 			for(var i=0; i<data.Students.length; i++){
 				document.getElementById("contentBox1").innerHTML += "<h3>" + String(data.Students[i].First) + " " + String(data.Students[i].Last) + "</h3>";
 			}
@@ -138,6 +140,8 @@
 		// $("#contentBox").load("scripts/myText.txt");
 		$.getJSON("scripts/students.json", function(data){
 			// $("#contentBox").html(data.Students[0].First);
+
+			document.getElementById("contentBox2").innerHTML = "";
 
 			for(var i=0; i<data.Students.length; i++){
 				document.getElementById("contentBox2").innerHTML += "<h3>" + String(data.Students[i].Major) + "</h3>";
@@ -151,6 +155,8 @@
 		$.getJSON("scripts/students.json", function(data){
 			// $("#contentBox").html(data.Students[0].First);
 
+			document.getElementById("contentBox3").innerHTML = "";
+
 			for(var i=0; i<data.Students.length; i++){
 				document.getElementById("contentBox3").innerHTML += "<h3>" + String(data.Students[i].GPA) + "</h3>";
 			}
@@ -161,6 +167,8 @@
 		// $("#contentBox").load("scripts/myText.txt");
 		$.getJSON("scripts/students.json", function(data){
 			// $("#contentBox").html(data.Students[0].First);
+
+			document.getElementById("contentBox4").innerHTML = "";
 
 			for(var i=0; i<data.Students.length; i++){
 				document.getElementById("contentBox4").innerHTML += "<h3>" + String(data.Students[i].Classification) + "</h3>";
